@@ -7,8 +7,8 @@ import (
 	"net/http"
 )
 
-func main(){
+func main() {
 	fmt.Print("API Rodando!!")
 	r := router.Gerar()
-	log.Fatal(http.ListenAndServe(":5000", r))
+	log.Fatal(http.ListenAndServe(":5001", r))
 }
